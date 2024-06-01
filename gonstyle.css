@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    min-height: 100vh;
+    place-content: center;
+    gap: 50px;
+    grid-auto-flow: column;
+   
+}
+
+.title h1 {
+    text-align: center;
+}
+h3 {
+    text-align: center;
+    font-size: 20px;
+}
+
+
+header {
+    background-image: url(bg.jpg);
+    background-position: 1vh;
+    color: #fff;
+    padding: 1rem;
+    background-size: cover;
+}
+header .logo-container {
+    display: flex;
+    align-items: center;
+}
+
+header .logo {
+    height: 50px;
+    margin-right: 1rem;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav {
+    background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+
+nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+nav a.active {
+    font-weight: bold;
+    color: #f00;
+}
+
+nav a.active::before {
+    content: " ";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #f00;
+    margin-right: 5px;
+}
+
+
+main {
+    padding: 2rem;
+}
+
+main h2 {
+    margin-top: 0;
+}
+
+main p {
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #333;
+    border: none;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+}
+
+footer {
+    background-color: #fff;
+
+    padding: 1rem;
+    text-align: center;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+#card-area{
+    padding: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.box-area{
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap: 40px;
+    margin-top: 20px;
+}
+.box{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0, 5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box img{
+    width: 60%;
+    border-radius: 10px;
+    transition: transform 0.5s;
+    
+
+}
+.overlay{
+    height: 0;
+    width: 60%;
+    background: linear-gradient(transparent,black 58%);
+    border-radius: 20px;
+    position: absolute;
+    left: 10;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 2    0px;
+    text-align: center;
+    font-size: 1.5vw;
+    transition: height 0.92s;
+    opacity: 0.92;
+    color: white;
+}
+.overlay h3{
+    font-weight: 500;
+    margin-bottom: 5px;
+    margin-top: 30%;
+    font-family: bebas neue;
+    font-size: 3vw;
+    letter-spacing: 5px;
+    
+}
+.overlay a{
+    margin-top: 10px;
+    color: #000;
+    text-decoration: none;
+    font-size: 50px;
+    background: white;
+    border-radius: 50px;
+    text-align: center;
+    padding: 5px 15px;
+}
+.boxLhover img{
+    transform: scale(1.2);
+}
+.box:hover .overlay{
+    height: 100%;
+}
+.resizable-text {
+    width: 50vw;
+    height: 100vh;
+    border: 1px solid black;
+    resize: both;
+    overflow: auto;
+    white-space: nowrap;
+  }
+  .container{
+    width: 100%;
+    background-color: f2e9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  
+  }
+.gallery{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.galleryImgBoxTanay{
+    width: 70px;
+    height: 30vb;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(pic/cielo1.jpeg);
+    background-size: cover;
+}
+.galleryImgBoxTanay:nth-child(2){
+    background-image: url(pic/cielo2.jpeg);
+}
+.galleryImgBoxTanay:nth-child(3){
+    background-image: url(pic/cielo3.jpeg);
+}
+.galleryImgBoxTanay:nth-child(4){
+    background-image: url(pic/cielo4.jpeg);
+}
+.galleryImgBoxTanay:hover{
+    width: 300px;
+    transform: translateX(50px);
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+
+
+.galleryImgBoxTM{
+    width: 70px;
+    height: 30vb;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(pic/treasuremountain1.jpg);
+    background-size: cover;
+}
+.galleryImgBoxTM:nth-child(2){
+    background-image: url(pic/treasuremountain2.jpg);
+}
+.galleryImgBoxTM:nth-child(3){
+    background-image: url(pic/treasuremountain3.jpg);
+}
+.galleryImgBoxTM:nth-child(4){
+    background-image: url(pic/treasuremountain4.jpg);
+}
+.galleryImgBoxTM:hover{
+    width: 300px;
+    transform: translateX(50px);
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.galleryImgBox3SP{
+    width: 70px;
+    height: 30vb;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(pic/3spring1.jpg);
+    background-size: cover;
+}
+.galleryImgBox3SP:nth-child(2){
+    background-image: url(pic/3spring2.jpg);
+}
+.galleryImgBox3SP:nth-child(3){
+    background-image: url(pic/3spring3.jpg);
+}
+.galleryImgBox3SP:nth-child(4){
+    background-image: url(pic/3spring4.jpg);
+}
+.galleryImgBox3SP:hover{
+    width: 300px;
+    transform: translateX(50px);
+    cursor: pointer;
+    transition: 0.9s;
+}
+.contact{
+    text-align: center;
+}
+.socialmedia{
+    text-align: center;
+}
+
+
+.galleryImgBoxGA{
+    width: 70px;
+    height: 30vb;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(pic/gaeas1.jpg);
+    background-size: cover;
+}
+.galleryImgBoxGA:nth-child(2){
+    background-image: url(pic/gaeas2.jpg);
+}
+.galleryImgBoxGA:nth-child(3){
+    background-image: url(pic/gaeas3.jpg);
+}
+.galleryImgBoxGA:nth-child(4){
+    background-image: url(pic/gaeas4.jpg);
+}
+.galleryImgBoxGA:hover{
+    width: 300px;
+    transform: translateX(50px);
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.galleryImgBoxKN{
+    width: 70px;
+        ight: 30vb;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(pic/kapenatividad1.jpg);
+    background-size: cover;
+}
+.galleryImgBoxKN:nth-child(2){
+    background-image: url(pic/kapenatividad2.jpg);
+}
+.galleryImgBoxKN:nth-child(3){
+    background-image: url(pic/kapenatividad3.jpg);
+}
+.galleryImgBoxKN:nth-child(4){
+    background-image: url(pic/kapenatividad4.jpg);
+}
+.galleryImgBoxKN:hover{
+    width: 300px;
+    transform: translateX(50px);
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+.galleryImgBoxTB{
+    width: 70px;
+    height: 30vb;
+    margin: 10px;
+    border-radius: 50px;
+    background-image: url(pic/tahananbistro1.jpg);
+    background-size: cover;
+}
+.galleryImgBoxTB:nth-child(2){
+    background-image: url(pic/tahananbistro2.jpg);
+}
+.galleryImgBoxTB:nth-child(3){
+    background-image: url(pic/tahananbistro3.jpg);
+}
+.galleryImgBoxTB:nth-child(4){
+    background-image: url(pic/tahananbistro4.jpg);
+}
+.galleryImgBoxTB:hover{
+    width: 300px;
+    transform: translateX(50px);
+    cursor: pointer;
+    transition: 0.9s;
+}
+
+body, h1, h2, h3, p, ul, li, table, th, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+   
+    height: auto;
+}
+
+.head {
+    margin: 0;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    margin: 0 10px;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+main {
+    padding: 20px;
+}
+
+.title {
+    text-align: center;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+main {
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    margin: 0 auto;
+    max-width: 600px;
+}
